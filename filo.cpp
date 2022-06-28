@@ -9,6 +9,14 @@ void dfs(int v, int p = -1){
         if(child != p) dfs(child, v);
     }
 }
+/* dfs for graph
+void dfs(int v){
+    vis[v] = true;
+    for(int child:v){
+        if(!vis[child]) dfs(child);
+    }
+} 
+*/
 vector<int> path(int v){
     vector<int> ans;
     while(v != -1){
